@@ -1,1702 +1,1369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Builddix | محصولات سه‌بعدی خاص</title>
-
-  <meta
-    name="description"
-    content="Builddix؛ فروش فیگور، اکسسوری و محصولات خاص چاپ سه‌بعدی."
-  />
   <meta name="enamad" content="64833323" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <title>64833323</title>
 
-  <style>
-    :root {
-      --bg: #f8f8f6;
-      --surface: #ffffff;
-      --surface-soft: #f1f1ed;
+    <meta name="description" content="Builddix؛ فروش فیگور، اکسسوری و محصولات خاص چاپ سه‌بعدی." />
+    <meta name="enamad" content="64833323" />
 
-      --text: #111827;
-      --text-soft: #667085;
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-      --border: #e7e7e2;
+    <style>
+      :root {
+        --bg: #f8f8f6;
+        --surface: #ffffff;
+        --surface-soft: #f1f1ed;
 
-      --navy: #101c35;
-      --navy-light: #1c2c4c;
+        --text: #111827;
+        --text-soft: #667085;
 
-      --orange: #f97316;
-      --orange-dark: #ea580c;
+        --border: #e7e7e2;
 
-      --radius-lg: 28px;
-      --radius-md: 18px;
-      --radius-sm: 12px;
+        --navy: #101c35;
+        --navy-light: #1c2c4c;
 
-      --container: 1180px;
-    }
+        --orange: #f97316;
+        --orange-dark: #ea580c;
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        --radius-lg: 28px;
+        --radius-md: 18px;
+        --radius-sm: 12px;
 
-    html {
-      scroll-behavior: smooth;
-    }
+        --container: 1180px;
+      }
 
-    body {
-      font-family: "Vazirmatn", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.8;
-    }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    img {
-      display: block;
-      width: 100%;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+      body {
+        font-family: "Vazirmatn", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+      }
 
-    button {
-      font-family: inherit;
-    }
+      img {
+        display: block;
+        width: 100%;
+      }
 
-    .container {
-      width: min(var(--container), calc(100% - 40px));
-      margin: 0 auto;
-    }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-    /* =========================
+      button {
+        font-family: inherit;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      /* =========================
        HEADER
     ========================= */
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-
-      background: rgba(248, 248, 246, 0.88);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-
-      border-bottom: 1px solid rgba(231, 231, 226, 0.8);
-    }
-
-    .header-inner {
-      height: 76px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-
-    .logo-mark {
-      width: 34px;
-      height: 34px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: var(--navy);
-      color: white;
-
-      border-radius: 10px;
-
-      font-size: 16px;
-      font-weight: 800;
-    }
-
-    .logo span {
-      color: var(--orange);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 34px;
-
-      font-size: 14px;
-      font-weight: 500;
-      color: #596273;
-    }
-
-    .nav a {
-      transition: color 0.2s ease;
-    }
-
-    .nav a:hover {
-      color: var(--navy);
-    }
-
-    .header-instagram {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      background: var(--navy);
-      color: white;
-
-      padding: 10px 16px;
-      border-radius: 11px;
-
-      font-size: 13px;
-      font-weight: 600;
-
-      transition: 0.2s ease;
-    }
-
-    .header-instagram:hover {
-      background: var(--navy-light);
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      padding: 70px 0 80px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 65px;
-
-      align-items: center;
-    }
-
-    .hero-content {
-      max-width: 560px;
-    }
-
-    .hero-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-
-      padding: 7px 13px;
-
-      background: #fff;
-      border: 1px solid var(--border);
-
-      border-radius: 999px;
-
-      color: #667085;
-
-      font-size: 12px;
-      font-weight: 600;
-
-      margin-bottom: 22px;
-    }
-
-    .hero-label-dot {
-      width: 7px;
-      height: 7px;
-      background: var(--orange);
-      border-radius: 50%;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 5.3vw, 68px);
-      line-height: 1.18;
-
-      letter-spacing: -2.8px;
-
-      font-weight: 800;
-
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: var(--orange);
-    }
-
-    .hero-description {
-      color: var(--text-soft);
-      font-size: 17px;
-
-      max-width: 520px;
-
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      flex-wrap: wrap;
-    }
-
-    .button {
-      min-height: 48px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 0 22px;
-
-      border-radius: 12px;
-
-      font-size: 14px;
-      font-weight: 700;
-
-      transition: all 0.2s ease;
-    }
-
-    .button-primary {
-      background: var(--navy);
-      color: white;
-    }
-
-    .button-primary:hover {
-      background: var(--navy-light);
-      transform: translateY(-2px);
-    }
-
-    .button-secondary {
-      background: white;
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .button-secondary:hover {
-      border-color: #cfcfc8;
-      transform: translateY(-2px);
-    }
-
-    .hero-note {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      margin-top: 20px;
-
-      color: #8a909c;
-      font-size: 12px;
-    }
-
-    .hero-note svg {
-      color: var(--orange);
-    }
-
-    /* Hero Product */
-
-    .hero-product {
-      position: relative;
-
-      min-height: 510px;
-
-      background: var(--surface-soft);
-
-      border-radius: var(--radius-lg);
-
-      overflow: hidden;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-product::before {
-      content: "";
-
-      position: absolute;
-
-      width: 420px;
-      height: 420px;
-
-      background: #e5e5df;
-
-      border-radius: 50%;
-
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
-    }
-
-    .hero-product-image {
-      position: relative;
-      z-index: 2;
-
-      width: 76%;
-      height: 430px;
-
-      object-fit: cover;
-
-      border-radius: 22px;
-
-      box-shadow:
-        0 30px 70px rgba(16, 24, 40, 0.16);
-    }
-
-    .hero-badge {
-      position: absolute;
-
-      right: 24px;
-      bottom: 24px;
-
-      z-index: 5;
-
-      background: white;
-
-      padding: 13px 17px;
-
-      border-radius: 14px;
-
-      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.1);
-
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .hero-badge strong {
-      display: block;
-      color: var(--navy);
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-
-    .hero-badge span {
-      color: #8a909c;
-      font-weight: 500;
-    }
-
-    /* =========================
-       SECTION
-    ========================= */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-
-      gap: 30px;
-
-      margin-bottom: 35px;
-    }
-
-    .section-title {
-      font-size: 32px;
-      line-height: 1.3;
-
-      letter-spacing: -1px;
-
-      font-weight: 800;
-    }
-
-    .section-description {
-      color: var(--text-soft);
-      font-size: 14px;
-
-      margin-top: 7px;
-    }
-
-    .section-link {
-      color: var(--orange);
-
-      font-size: 13px;
-      font-weight: 700;
-
-      white-space: nowrap;
-    }
-
-    /* =========================
-       PRODUCTS
-    ========================= */
-
-    .products-section {
-      background: white;
-
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .products {
-      display: grid;
-
-      grid-template-columns: repeat(4, 1fr);
-
-      gap: 18px;
-    }
-
-    .product {
-      background: white;
-
-      border: 1px solid var(--border);
-
-      border-radius: var(--radius-md);
-
-      overflow: hidden;
-
-      transition: all 0.25s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
-
-      box-shadow:
-        0 18px 40px rgba(16, 24, 40, 0.08);
-
-      border-color: #dcdcd6;
-    }
-
-    .product-image {
-      position: relative;
-
-      aspect-ratio: 1 / 1;
-
-      background: #f1f1ed;
-
-      overflow: hidden;
-    }
-
-    .product-image img {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-
-      transition: transform 0.4s ease;
-    }
-
-    .product:hover .product-image img {
-      transform: scale(1.04);
-    }
-
-    .product-tag {
-      position: absolute;
-
-      top: 12px;
-      right: 12px;
-
-      background: white;
-
-      padding: 5px 9px;
-
-      border-radius: 8px;
-
-      font-size: 10px;
-      font-weight: 700;
-
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    }
-
-    .product-content {
-      padding: 18px;
-    }
-
-    .product-category {
-      color: #9298a3;
-
-      font-size: 11px;
-      font-weight: 500;
-
-      margin-bottom: 5px;
-    }
-
-    .product-name {
-      font-size: 16px;
-      font-weight: 700;
-
-      margin-bottom: 12px;
-    }
-
-    .product-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 10px;
-    }
-
-    .product-price {
-      color: var(--navy);
-
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .product-price small {
-      color: #8a909c;
-
-      font-size: 10px;
-      font-weight: 500;
-    }
-
-    .product-button {
-      width: 36px;
-      height: 36px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 10px;
-
-      background: var(--navy);
-      color: white;
-
-      transition: 0.2s ease;
-    }
-
-    .product-button:hover {
-      background: var(--orange);
-    }
-
-    /* =========================
-       CATEGORIES
-    ========================= */
-
-    .categories {
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 18px;
-    }
-
-    .category {
-      min-height: 190px;
-
-      position: relative;
-
-      padding: 30px;
-
-      border-radius: var(--radius-md);
-
-      overflow: hidden;
-
-      background: var(--navy);
-
-      color: white;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-
-      transition: transform 0.2s ease;
-    }
-
-    .category:hover {
-      transform: translateY(-4px);
-    }
-
-    .category:nth-child(2) {
-      background: #e9e9e4;
-      color: var(--navy);
-    }
-
-    .category:nth-child(3) {
-      background: #f3e8df;
-      color: var(--navy);
-    }
-
-    .category-number {
-      position: absolute;
-
-      top: 22px;
-      left: 24px;
-
-      font-size: 50px;
-      line-height: 1;
-
-      opacity: 0.08;
-
-      font-weight: 800;
-    }
-
-    .category h3 {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-
-    .category p {
-      font-size: 12px;
-      opacity: 0.65;
-    }
-
-    /* =========================
-       WHY BUILDDIX
-    ========================= */
-
-    .why {
-      display: grid;
-
-      grid-template-columns: 0.85fr 1.15fr;
-
-      gap: 70px;
-
-      align-items: center;
-    }
-
-    .why-title {
-      font-size: 38px;
-
-      line-height: 1.3;
-
-      letter-spacing: -1.5px;
-
-      margin-bottom: 16px;
-    }
-
-    .why-description {
-      color: var(--text-soft);
-
-      font-size: 15px;
-
-      max-width: 450px;
-    }
-
-    .features {
-      display: grid;
-
-      grid-template-columns: repeat(2, 1fr);
-
-      gap: 12px;
-    }
-
-    .feature {
-      background: white;
-
-      border: 1px solid var(--border);
-
-      border-radius: 16px;
-
-      padding: 24px;
-    }
-
-    .feature-icon {
-      width: 42px;
-      height: 42px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: #fff3eb;
-
-      color: var(--orange);
-
-      border-radius: 12px;
-
-      margin-bottom: 16px;
-    }
-
-    .feature h3 {
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
-
-    .feature p {
-      color: var(--text-soft);
-
-      font-size: 12px;
-    }
-
-    /* =========================
-       INSTAGRAM CTA
-    ========================= */
-
-    .instagram-section {
-      padding-top: 20px;
-      padding-bottom: 90px;
-    }
-
-    .instagram-box {
-      position: relative;
-
-      overflow: hidden;
-
-      background: var(--navy);
-
-      color: white;
-
-      border-radius: var(--radius-lg);
-
-      padding: 55px 60px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 40px;
-    }
-
-    .instagram-box::before {
-      content: "";
-
-      position: absolute;
-
-      width: 300px;
-      height: 300px;
-
-      border: 70px solid rgba(255, 255, 255, 0.025);
-
-      border-radius: 50%;
-
-      left: -80px;
-      top: -120px;
-    }
-
-    .instagram-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .instagram-label {
-      color: #9da8ba;
-
-      font-size: 12px;
-
-      margin-bottom: 8px;
-    }
-
-    .instagram-box h2 {
-      font-size: 30px;
-
-      letter-spacing: -1px;
-
-      margin-bottom: 8px;
-    }
-
-    .instagram-box p {
-      color: #aab3c1;
-
-      font-size: 13px;
-    }
-
-    .instagram-button {
-      position: relative;
-      z-index: 2;
-
-      display: inline-flex;
-
-      align-items: center;
-      gap: 8px;
-
-      background: white;
-      color: var(--navy);
-
-      padding: 13px 20px;
-
-      border-radius: 12px;
-
-      font-size: 13px;
-      font-weight: 700;
-
-      white-space: nowrap;
-
-      transition: 0.2s ease;
-    }
-
-    .instagram-button:hover {
-      background: #f5f5f5;
-
-      transform: translateY(-2px);
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      border-top: 1px solid var(--border);
-
-      padding: 28px 0;
-
-      color: #8a909c;
-
-      font-size: 11px;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 20px;
-    }
-
-    .footer-logo {
-      color: var(--navy);
-
-      font-size: 17px;
-      font-weight: 800;
-    }
-
-    .footer-logo span {
-      color: var(--orange);
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 950px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-      }
-
-      .hero-content {
-        max-width: 700px;
-      }
-
-      .hero-product {
-        min-height: 450px;
-      }
-
-      .products {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .why {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .container {
-        width: min(var(--container), calc(100% - 28px));
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
+        background: rgba(248, 248, 246, 0.88);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border-bottom: 1px solid rgba(231, 231, 226, 0.8);
       }
 
       .header-inner {
-        height: 68px;
+        height: 76px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+
+      .logo-mark {
+        width: 34px;
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--navy);
+        color: white;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .logo span {
+        color: var(--orange);
       }
 
       .nav {
-        display: none;
+        display: flex;
+        align-items: center;
+        gap: 34px;
+
+        font-size: 14px;
+        font-weight: 500;
+        color: #596273;
+      }
+
+      .nav a {
+        transition: color 0.2s ease;
+      }
+
+      .nav a:hover {
+        color: var(--navy);
       }
 
       .header-instagram {
-        padding: 8px 12px;
-        font-size: 11px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        background: var(--navy);
+        color: white;
+
+        padding: 10px 16px;
+        border-radius: 11px;
+
+        font-size: 13px;
+        font-weight: 600;
+
+        transition: 0.2s ease;
       }
 
+      .header-instagram:hover {
+        background: var(--navy-light);
+        transform: translateY(-1px);
+      }
+
+      /* =========================
+       HERO
+    ========================= */
+
       .hero {
-        padding: 45px 0 55px;
+        padding: 70px 0 80px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 65px;
+
+        align-items: center;
+      }
+
+      .hero-content {
+        max-width: 560px;
+      }
+
+      .hero-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 7px 13px;
+
+        background: #fff;
+        border: 1px solid var(--border);
+
+        border-radius: 999px;
+
+        color: #667085;
+
+        font-size: 12px;
+        font-weight: 600;
+
+        margin-bottom: 22px;
+      }
+
+      .hero-label-dot {
+        width: 7px;
+        height: 7px;
+        background: var(--orange);
+        border-radius: 50%;
       }
 
       .hero h1 {
-        font-size: 42px;
-        letter-spacing: -2px;
+        font-size: clamp(42px, 5.3vw, 68px);
+        line-height: 1.18;
+
+        letter-spacing: -2.8px;
+
+        font-weight: 800;
+
+        margin-bottom: 22px;
+      }
+
+      .hero h1 span {
+        color: var(--orange);
       }
 
       .hero-description {
-        font-size: 15px;
+        color: var(--text-soft);
+        font-size: 17px;
+
+        max-width: 520px;
+
+        margin-bottom: 30px;
       }
 
-      .hero-product {
-        min-height: 350px;
-        border-radius: 22px;
+      .hero-buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        flex-wrap: wrap;
       }
 
-      .hero-product-image {
-        width: 82%;
-        height: 300px;
+      .button {
+        min-height: 48px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 22px;
+
+        border-radius: 12px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        transition: all 0.2s ease;
       }
 
-      .hero-product::before {
-        width: 280px;
-        height: 280px;
+      .button-primary {
+        background: var(--navy);
+        color: white;
       }
 
-      section {
-        padding: 65px 0;
+      .button-primary:hover {
+        background: var(--navy-light);
+        transform: translateY(-2px);
       }
 
-      .section-header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
+      .button-secondary {
+        background: white;
+        color: var(--text);
+        border: 1px solid var(--border);
       }
 
-      .section-title {
-        font-size: 27px;
+      .button-secondary:hover {
+        border-color: #cfcfc8;
+        transform: translateY(-2px);
       }
 
-      .products {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-      }
+      .hero-note {
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-      .product-content {
-        padding: 13px;
-      }
+        margin-top: 20px;
 
-      .product-name {
-        font-size: 13px;
-      }
-
-      .product-price {
+        color: #8a909c;
         font-size: 12px;
       }
 
-      .categories {
-        grid-template-columns: 1fr;
+      .hero-note svg {
+        color: var(--orange);
       }
 
-      .category {
-        min-height: 160px;
+      /* Hero Product */
+
+      .hero-product {
+        position: relative;
+
+        min-height: 510px;
+
+        background: var(--surface-soft);
+
+        border-radius: var(--radius-lg);
+
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .features {
-        grid-template-columns: 1fr;
+      .hero-product::before {
+        content: "";
+
+        position: absolute;
+
+        width: 420px;
+        height: 420px;
+
+        background: #e5e5df;
+
+        border-radius: 50%;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
       }
 
-      .why-title {
-        font-size: 30px;
-      }
+      .hero-product-image {
+        position: relative;
+        z-index: 2;
 
-      .instagram-box {
-        padding: 35px 25px;
+        width: 76%;
+        height: 430px;
 
-        flex-direction: column;
-        align-items: flex-start;
+        object-fit: cover;
 
         border-radius: 22px;
+
+        box-shadow: 0 30px 70px rgba(16, 24, 40, 0.16);
       }
 
-      .instagram-box h2 {
-        font-size: 25px;
+      .hero-badge {
+        position: absolute;
+
+        right: 24px;
+        bottom: 24px;
+
+        z-index: 5;
+
+        background: white;
+
+        padding: 13px 17px;
+
+        border-radius: 14px;
+
+        box-shadow: 0 10px 30px rgba(16, 24, 40, 0.1);
+
+        font-size: 12px;
+        font-weight: 700;
       }
 
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
+      .hero-badge strong {
+        display: block;
+        color: var(--navy);
+        font-size: 14px;
+        margin-bottom: 2px;
       }
-    }
 
-    @media (max-width: 420px) {
+      .hero-badge span {
+        color: #8a909c;
+        font-weight: 500;
+      }
+
+      /* =========================
+       SECTION
+    ========================= */
+
+      section {
+        padding: 90px 0;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        gap: 30px;
+
+        margin-bottom: 35px;
+      }
+
+      .section-title {
+        font-size: 32px;
+        line-height: 1.3;
+
+        letter-spacing: -1px;
+
+        font-weight: 800;
+      }
+
+      .section-description {
+        color: var(--text-soft);
+        font-size: 14px;
+
+        margin-top: 7px;
+      }
+
+      .section-link {
+        color: var(--orange);
+
+        font-size: 13px;
+        font-weight: 700;
+
+        white-space: nowrap;
+      }
+
+      /* =========================
+       PRODUCTS
+    ========================= */
+
+      .products-section {
+        background: white;
+
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
       .products {
-        grid-template-columns: 1fr;
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 18px;
+      }
+
+      .product {
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: var(--radius-md);
+
+        overflow: hidden;
+
+        transition: all 0.25s ease;
+      }
+
+      .product:hover {
+        transform: translateY(-5px);
+
+        box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+
+        border-color: #dcdcd6;
       }
 
       .product-image {
-        aspect-ratio: 1.15 / 1;
+        position: relative;
+
+        aspect-ratio: 1 / 1;
+
+        background: #f1f1ed;
+
+        overflow: hidden;
       }
 
-      .hero h1 {
-        font-size: 37px;
+      .product-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: transform 0.4s ease;
       }
-    }
-  </style>
-</head>
 
-<body>
+      .product:hover .product-image img {
+        transform: scale(1.04);
+      }
 
-  <!-- =========================
+      .product-tag {
+        position: absolute;
+
+        top: 12px;
+        right: 12px;
+
+        background: white;
+
+        padding: 5px 9px;
+
+        border-radius: 8px;
+
+        font-size: 10px;
+        font-weight: 700;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      }
+
+      .product-content {
+        padding: 18px;
+      }
+
+      .product-category {
+        color: #9298a3;
+
+        font-size: 11px;
+        font-weight: 500;
+
+        margin-bottom: 5px;
+      }
+
+      .product-name {
+        font-size: 16px;
+        font-weight: 700;
+
+        margin-bottom: 12px;
+      }
+
+      .product-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+      }
+
+      .product-price {
+        color: var(--navy);
+
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .product-price small {
+        color: #8a909c;
+
+        font-size: 10px;
+        font-weight: 500;
+      }
+
+      .product-button {
+        width: 36px;
+        height: 36px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+
+        background: var(--navy);
+        color: white;
+
+        transition: 0.2s ease;
+      }
+
+      .product-button:hover {
+        background: var(--orange);
+      }
+
+      /* =========================
+       CATEGORIES
+    ========================= */
+
+      .categories {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 18px;
+      }
+
+      .category {
+        min-height: 190px;
+
+        position: relative;
+
+        padding: 30px;
+
+        border-radius: var(--radius-md);
+
+        overflow: hidden;
+
+        background: var(--navy);
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        transition: transform 0.2s ease;
+      }
+
+      .category:hover {
+        transform: translateY(-4px);
+      }
+
+      .category:nth-child(2) {
+        background: #e9e9e4;
+        color: var(--navy);
+      }
+
+      .category:nth-child(3) {
+        background: #f3e8df;
+        color: var(--navy);
+      }
+
+      .category-number {
+        position: absolute;
+
+        top: 22px;
+        left: 24px;
+
+        font-size: 50px;
+        line-height: 1;
+
+        opacity: 0.08;
+
+        font-weight: 800;
+      }
+
+      .category h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .category p {
+        font-size: 12px;
+        opacity: 0.65;
+      }
+
+      /* =========================
+       WHY BUILDDIX
+    ========================= */
+
+      .why {
+        display: grid;
+
+        grid-template-columns: 0.85fr 1.15fr;
+
+        gap: 70px;
+
+        align-items: center;
+      }
+
+      .why-title {
+        font-size: 38px;
+
+        line-height: 1.3;
+
+        letter-spacing: -1.5px;
+
+        margin-bottom: 16px;
+      }
+
+      .why-description {
+        color: var(--text-soft);
+
+        font-size: 15px;
+
+        max-width: 450px;
+      }
+
+      .features {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+      }
+
+      .feature {
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: 16px;
+
+        padding: 24px;
+      }
+
+      .feature-icon {
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #fff3eb;
+
+        color: var(--orange);
+
+        border-radius: 12px;
+
+        margin-bottom: 16px;
+      }
+
+      .feature h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+
+      .feature p {
+        color: var(--text-soft);
+
+        font-size: 12px;
+      }
+
+      /* =========================
+       INSTAGRAM CTA
+    ========================= */
+
+      .instagram-section {
+        padding-top: 20px;
+        padding-bottom: 90px;
+      }
+
+      .instagram-box {
+        position: relative;
+
+        overflow: hidden;
+
+        background: var(--navy);
+
+        color: white;
+
+        border-radius: var(--radius-lg);
+
+        padding: 55px 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 40px;
+      }
+
+      .instagram-box::before {
+        content: "";
+
+        position: absolute;
+
+        width: 300px;
+        height: 300px;
+
+        border: 70px solid rgba(255, 255, 255, 0.025);
+
+        border-radius: 50%;
+
+        left: -80px;
+        top: -120px;
+      }
+
+      .instagram-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .instagram-label {
+        color: #9da8ba;
+
+        font-size: 12px;
+
+        margin-bottom: 8px;
+      }
+
+      .instagram-box h2 {
+        font-size: 30px;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 8px;
+      }
+
+      .instagram-box p {
+        color: #aab3c1;
+
+        font-size: 13px;
+      }
+
+      .instagram-button {
+        position: relative;
+        z-index: 2;
+
+        display: inline-flex;
+
+        align-items: center;
+        gap: 8px;
+
+        background: white;
+        color: var(--navy);
+
+        padding: 13px 20px;
+
+        border-radius: 12px;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        white-space: nowrap;
+
+        transition: 0.2s ease;
+      }
+
+      .instagram-button:hover {
+        background: #f5f5f5;
+
+        transform: translateY(-2px);
+      }
+
+      /* =========================
+       FOOTER
+    ========================= */
+
+      footer {
+        border-top: 1px solid var(--border);
+
+        padding: 28px 0;
+
+        color: #8a909c;
+
+        font-size: 11px;
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+      }
+
+      .footer-logo {
+        color: var(--navy);
+
+        font-size: 17px;
+        font-weight: 800;
+      }
+
+      .footer-logo span {
+        color: var(--orange);
+      }
+
+      /* =========================
+       MOBILE
+    ========================= */
+
+      @media (max-width: 950px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+
+          gap: 45px;
+        }
+
+        .hero-content {
+          max-width: 700px;
+        }
+
+        .hero-product {
+          min-height: 450px;
+        }
+
+        .products {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .why {
+          grid-template-columns: 1fr;
+
+          gap: 40px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          width: min(var(--container), calc(100% - 28px));
+        }
+
+        .header-inner {
+          height: 68px;
+        }
+
+        .nav {
+          display: none;
+        }
+
+        .header-instagram {
+          padding: 8px 12px;
+          font-size: 11px;
+        }
+
+        .hero {
+          padding: 45px 0 55px;
+        }
+
+        .hero h1 {
+          font-size: 42px;
+          letter-spacing: -2px;
+        }
+
+        .hero-description {
+          font-size: 15px;
+        }
+
+        .hero-product {
+          min-height: 350px;
+          border-radius: 22px;
+        }
+
+        .hero-product-image {
+          width: 82%;
+          height: 300px;
+        }
+
+        .hero-product::before {
+          width: 280px;
+          height: 280px;
+        }
+
+        section {
+          padding: 65px 0;
+        }
+
+        .section-header {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .section-title {
+          font-size: 27px;
+        }
+
+        .products {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+
+        .product-content {
+          padding: 13px;
+        }
+
+        .product-name {
+          font-size: 13px;
+        }
+
+        .product-price {
+          font-size: 12px;
+        }
+
+        .categories {
+          grid-template-columns: 1fr;
+        }
+
+        .category {
+          min-height: 160px;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+        }
+
+        .why-title {
+          font-size: 30px;
+        }
+
+        .instagram-box {
+          padding: 35px 25px;
+
+          flex-direction: column;
+          align-items: flex-start;
+
+          border-radius: 22px;
+        }
+
+        .instagram-box h2 {
+          font-size: 25px;
+        }
+
+        .footer-inner {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .products {
+          grid-template-columns: 1fr;
+        }
+
+        .product-image {
+          aspect-ratio: 1.15 / 1;
+        }
+
+        .hero h1 {
+          font-size: 37px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
        HEADER
   ========================== -->
 
-  <header>
-    <div class="container">
-      <div class="header-inner">
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <a href="#" class="logo">
+            <div class="footer-logo" style="font-size: 28px">build<span>dix</span></div>
+          </a>
 
-        <a href="#" class="logo">
-        <div class="footer-logo" style="font-size: 28px;">
-          build<span>dix</span>
+          <nav class="nav">
+            <a href="#products">محصولات</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#about">درباره Builddix</a>
+          </nav>
+
+          <a class="header-instagram" href="https://instagram.com/builddix" target="_blank" rel="noopener"> Instagram </a>
         </div>
-
-        </a>
-
-        <nav class="nav">
-          <a href="#products">محصولات</a>
-          <a href="#categories">دسته‌بندی‌ها</a>
-          <a href="#about">درباره Builddix</a>
-        </nav>
-
-        <a
-          class="header-instagram"
-          href="https://instagram.com/builddix"
-          target="_blank"
-          rel="noopener"
-        >
-          Instagram
-        </a>
-
       </div>
-    </div>
-  </header>
+    </header>
 
-
-  <main>
-
-    <!-- =========================
+    <main>
+      <!-- =========================
          HERO
     ========================== -->
 
-    <section class="hero">
-      <div class="container">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-label">
+                <span class="hero-label-dot"></span>
+                محصولات چاپ سه‌بعدی
+              </div>
 
-        <div class="hero-grid">
+              <h1>
+                چیزهای خاص،<br />
+                <span>ساخته‌شده</span> برای تو.
+              </h1>
 
-          <div class="hero-content">
+              <p class="hero-description">
+                از فیگورهای خاص تا اکسسوری‌های متفاوت؛ محصولات Builddix با چاپ سه‌بعدی ساخته می‌شن تا چیزی متفاوت برای میز کار، اتاق یا هدیه داشته
+                باشی.
+              </p>
 
-            <div class="hero-label">
-              <span class="hero-label-dot"></span>
-              محصولات چاپ سه‌بعدی
+              <div class="hero-buttons">
+                <a href="#products" class="button button-primary"> دیدن محصولات </a>
+
+                <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="button button-secondary"> صفحه اینستاگرام </a>
+              </div>
+
+              <div class="hero-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+
+                ساخته‌شده با دقت، از مدل تا محصول نهایی
+              </div>
             </div>
 
-            <h1>
-              چیزهای خاص،<br>
-              <span>ساخته‌شده</span> برای تو.
-            </h1>
-
-            <p class="hero-description">
-              از فیگورهای خاص تا اکسسوری‌های متفاوت؛
-              محصولات Builddix با چاپ سه‌بعدی ساخته می‌شن
-              تا چیزی متفاوت برای میز کار، اتاق یا هدیه داشته باشی.
-            </p>
-
-            <div class="hero-buttons">
-
-              <a href="#products" class="button button-primary">
-                دیدن محصولات
-              </a>
-
-              <a
-                href="https://instagram.com/builddix"
-                target="_blank"
-                rel="noopener"
-                class="button button-secondary"
-              >
-                صفحه اینستاگرام
-              </a>
-
-            </div>
-
-            <div class="hero-note">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M20 6 9 17l-5-5"/>
-              </svg>
-
-              ساخته‌شده با دقت، از مدل تا محصول نهایی
-            </div>
-
-          </div>
-
-
-          <div class="hero-product">
-
-            <!--
+            <div class="hero-product">
+              <!--
               Replace this image with your best product photo.
 
               Example:
               images/hero.jpg
             -->
 
-            <img
-              class="hero-product-image"
-              src="images/planter.jpeg"
-              alt="محصول سه بعدی Builddix"
-            />
+              <img class="hero-product-image" src="images/planter.jpeg" alt="محصول سه بعدی Builddix" />
 
-            <div class="hero-badge">
-              <strong>Builddix</strong>
-              <span>Made with 3D printing</span>
+              <div class="hero-badge">
+                <strong>Builddix</strong>
+                <span>Made with 3D printing</span>
+              </div>
             </div>
-
           </div>
-
         </div>
+      </section>
 
-      </div>
-    </section>
-
-
-    <!-- =========================
+      <!-- =========================
          PRODUCTS
     ========================== -->
 
-    <section id="products" class="products-section">
+      <section id="products" class="products-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">محصولات منتخب</h2>
 
-      <div class="container">
-
-        <div class="section-header">
-
-          <div>
-            <h2 class="section-title">
-              محصولات منتخب
-            </h2>
-
-            <p class="section-description">
-              چندتا از محصولاتی که می‌تونی از Builddix تهیه کنی.
-            </p>
-          </div>
-
-          <a
-            href="https://instagram.com/builddix"
-            target="_blank"
-            rel="noopener"
-            class="section-link"
-          >
-            مشاهده همه ←
-          </a>
-
-        </div>
-
-
-        <div class="products">
-
-          <!-- PRODUCT 1 -->
-
-          <article class="product">
-
-            <div class="product-image">
-
-              <img
-                src="images/ghost.jpeg"
-                alt="فیگور سه بعدی"
-                loading="lazy"
-              />
-
-              <span class="product-tag">
-                محبوب
-              </span>
-
+              <p class="section-description">چندتا از محصولاتی که می‌تونی از Builddix تهیه کنی.</p>
             </div>
 
-            <div class="product-content">
+            <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="section-link"> مشاهده همه ← </a>
+          </div>
 
-              <div class="product-category">
-                فیگور
+          <div class="products">
+            <!-- PRODUCT 1 -->
+
+            <article class="product">
+              <div class="product-image">
+                <img src="images/ghost.jpeg" alt="فیگور سه بعدی" loading="lazy" />
+
+                <span class="product-tag"> محبوب </span>
               </div>
 
-              <h3 class="product-name">
-                فیگور شخصیت
-              </h3>
+              <div class="product-content">
+                <div class="product-category">فیگور</div>
 
-              <div class="product-bottom">
+                <h3 class="product-name">فیگور شخصیت</h3>
 
-                <!-- <div class="product-price">
+                <div class="product-bottom">
+                  <!-- <div class="product-price">
                   ۱۲۰,۰۰۰
                   <small>تومان</small>
                 </div> -->
 
-                <a
-                  href="https://instagram.com/builddix"
-                  target="_blank"
-                  rel="noopener"
-                  class="product-button"
-                  aria-label="مشاهده محصول"
-                >
-                  ←
-                </a>
+                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+                </div>
+              </div>
+            </article>
 
+            <!-- PRODUCT 2 -->
+
+            <article class="product">
+              <div class="product-image">
+                <img src="images/harrypotter.jpeg" alt="فیگور سفارشی سه بعدی" loading="lazy" />
+
+                <span class="product-tag"> جدید </span>
               </div>
 
-            </div>
+              <div class="product-content">
+                <div class="product-category">فیگور</div>
 
-          </article>
+                <h3 class="product-name">فیگور سفارشی</h3>
 
-
-          <!-- PRODUCT 2 -->
-
-          <article class="product">
-
-            <div class="product-image">
-
-              <img
-                src="images/harrypotter.jpeg"
-                alt="فیگور سفارشی سه بعدی"
-                loading="lazy"
-              />
-
-              <span class="product-tag">
-                جدید
-              </span>
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                فیگور
-              </div>
-
-              <h3 class="product-name">
-                فیگور سفارشی
-              </h3>
-
-              <div class="product-bottom">
-
-                <!-- <div class="product-price">
+                <div class="product-bottom">
+                  <!-- <div class="product-price">
                   ۲۴۰,۰۰۰
                   <small>تومان</small>
                 </div> -->
 
-                <a
-                  href="https://instagram.com/builddix"
-                  target="_blank"
-                  rel="noopener"
-                  class="product-button"
-                  aria-label="مشاهده محصول"
-                >
-                  ←
-                </a>
+                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+                </div>
+              </div>
+            </article>
 
+            <!-- PRODUCT 3 -->
+
+            <article class="product">
+              <div class="product-image">
+                <img src="images/gang.jpeg" alt="بوکمارک سه بعدی" loading="lazy" />
               </div>
 
-            </div>
+              <div class="product-content">
+                <div class="product-category">اکسسوری</div>
 
-          </article>
+                <h3 class="product-name">بوکمارک سه بعدی</h3>
 
-
-          <!-- PRODUCT 3 -->
-
-          <article class="product">
-
-            <div class="product-image">
-
-              <img
-                src="images/gang.jpeg"
-                alt="بوکمارک سه بعدی"
-                loading="lazy"
-              />
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                اکسسوری
-              </div>
-
-              <h3 class="product-name">
-                بوکمارک سه بعدی
-              </h3>
-
-              <div class="product-bottom">
-
-                <!-- <div class="product-price">
+                <div class="product-bottom">
+                  <!-- <div class="product-price">
                   ۸۰,۰۰۰
                   <small>تومان</small>
                 </div> -->
 
-                <a
-                  href="https://instagram.com/builddix"
-                  target="_blank"
-                  rel="noopener"
-                  class="product-button"
-                  aria-label="مشاهده محصول"
-                >
-                  ←
-                </a>
+                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+                </div>
+              </div>
+            </article>
 
+            <!-- PRODUCT 4 -->
+
+            <article class="product">
+              <div class="product-image">
+                <img src="images/astronaut.jpeg" alt="اکسسوری میز کار سه بعدی" loading="lazy" />
               </div>
 
-            </div>
+              <div class="product-content">
+                <div class="product-category">میز کار</div>
 
-          </article>
+                <h3 class="product-name">اکسسوری میز</h3>
 
-
-          <!-- PRODUCT 4 -->
-
-          <article class="product">
-
-            <div class="product-image">
-
-              <img
-                src="images/astronaut.jpeg"
-                alt="اکسسوری میز کار سه بعدی"
-                loading="lazy"
-              />
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                میز کار
-              </div>
-
-              <h3 class="product-name">
-                اکسسوری میز
-              </h3>
-
-              <div class="product-bottom">
-
-                <!-- <div class="product-price">
+                <div class="product-bottom">
+                  <!-- <div class="product-price">
                   ۹۵,۰۰۰
                   <small>تومان</small>
                 </div> -->
 
-                <a
-                  href="https://instagram.com/builddix"
-                  target="_blank"
-                  rel="noopener"
-                  class="product-button"
-                  aria-label="مشاهده محصول"
-                >
-                  ←
-                </a>
-
+                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+                </div>
               </div>
-
-            </div>
-
-          </article>
-
+            </article>
+          </div>
         </div>
+      </section>
 
-      </div>
-
-    </section>
-
-
-    <!-- =========================
+      <!-- =========================
          CATEGORIES
     ========================== -->
 
-    <section id="categories">
+      <section id="categories">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">چی می‌تونی پیدا کنی؟</h2>
 
-      <div class="container">
-
-        <div class="section-header">
-
-          <div>
-            <h2 class="section-title">
-              چی می‌تونی پیدا کنی؟
-            </h2>
-
-            <p class="section-description">
-              محصولات Builddix برای سلیقه‌های مختلف.
-            </p>
+              <p class="section-description">محصولات Builddix برای سلیقه‌های مختلف.</p>
+            </div>
           </div>
 
+          <div class="categories">
+            <a href="#products" class="category">
+              <span class="category-number"> 01 </span>
+
+              <h3>فیگورها</h3>
+
+              <p>شخصیت‌هایی که دوستشون داری، به شکل واقعی.</p>
+            </a>
+
+            <a href="#products" class="category">
+              <span class="category-number"> 02 </span>
+
+              <h3>اکسسوری</h3>
+
+              <p>چیزهای کوچک و خاص برای میز و اتاق.</p>
+            </a>
+
+            <a href="#products" class="category">
+              <span class="category-number"> 03 </span>
+
+              <h3>سفارشی</h3>
+
+              <p>ایده خودت رو بده؛ ما تبدیلش می‌کنیم به یک محصول.</p>
+            </a>
+          </div>
         </div>
+      </section>
 
-
-        <div class="categories">
-
-          <a href="#products" class="category">
-
-            <span class="category-number">
-              01
-            </span>
-
-            <h3>
-              فیگورها
-            </h3>
-
-            <p>
-              شخصیت‌هایی که دوستشون داری، به شکل واقعی.
-            </p>
-
-          </a>
-
-
-          <a href="#products" class="category">
-
-            <span class="category-number">
-              02
-            </span>
-
-            <h3>
-              اکسسوری
-            </h3>
-
-            <p>
-              چیزهای کوچک و خاص برای میز و اتاق.
-            </p>
-
-          </a>
-
-
-          <a href="#products" class="category">
-
-            <span class="category-number">
-              03
-            </span>
-
-            <h3>
-              سفارشی
-            </h3>
-
-            <p>
-              ایده خودت رو بده؛ ما تبدیلش می‌کنیم به یک محصول.
-            </p>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
+      <!-- =========================
          ABOUT / WHY
     ========================== -->
 
-    <section id="about">
+      <section id="about">
+        <div class="container">
+          <div class="why">
+            <div>
+              <h2 class="why-title">فقط یک پرینت سه‌بعدی نیست.</h2>
 
-      <div class="container">
+              <p class="why-description">
+                هدف Builddix اینه که محصولات سه‌بعدی فقط «چیزی که با پرینتر ساخته شده» نباشن؛ بلکه محصولی باشن که دوست داشته باشی نگهش داری، روی میزت
+                بذاری یا به کسی هدیه بدی.
+              </p>
+            </div>
 
-        <div class="why">
+            <div class="features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3v18" />
+                    <path d="M3 12h18" />
+                    <path d="m5 5 14 14" />
+                    <path d="m19 5-14 14" />
+                  </svg>
+                </div>
 
-          <div>
+                <h3>طراحی خاص</h3>
 
-            <h2 class="why-title">
-              فقط یک پرینت سه‌بعدی نیست.
-            </h2>
+                <p>تمرکز روی ظاهر و جزئیات، نه فقط چاپ کردن یک فایل.</p>
+              </div>
 
-            <p class="why-description">
-              هدف Builddix اینه که محصولات سه‌بعدی فقط
-              «چیزی که با پرینتر ساخته شده» نباشن؛
-              بلکه محصولی باشن که دوست داشته باشی نگهش داری،
-              روی میزت بذاری یا به کسی هدیه بدی.
-            </p>
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3v18" />
+                    <path d="M3 12h18" />
+                  </svg>
+                </div>
 
+                <h3>قابل سفارش</h3>
+
+                <p>اگر محصول خاصی می‌خوای، می‌تونی سفارشی درخواستش کنی.</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+
+                <h3>توجه به کیفیت</h3>
+
+                <p>آماده‌سازی مدل و چاپ با توجه به نتیجه نهایی انجام می‌شه.</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                </div>
+
+                <h3>ساخت با حوصله</h3>
+
+                <p>هر محصول قبل از رسیدن به دستت بررسی و آماده می‌شه.</p>
+              </div>
+            </div>
           </div>
-
-
-          <div class="features">
-
-            <div class="feature">
-
-              <div class="feature-icon">
-
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M12 3v18"/>
-                  <path d="M3 12h18"/>
-                  <path d="m5 5 14 14"/>
-                  <path d="m19 5-14 14"/>
-                </svg>
-
-              </div>
-
-              <h3>
-                طراحی خاص
-              </h3>
-
-              <p>
-                تمرکز روی ظاهر و جزئیات، نه فقط چاپ کردن یک فایل.
-              </p>
-
-            </div>
-
-
-            <div class="feature">
-
-              <div class="feature-icon">
-
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M12 3v18"/>
-                  <path d="M3 12h18"/>
-                </svg>
-
-              </div>
-
-              <h3>
-                قابل سفارش
-              </h3>
-
-              <p>
-                اگر محصول خاصی می‌خوای، می‌تونی سفارشی درخواستش کنی.
-              </p>
-
-            </div>
-
-
-            <div class="feature">
-
-              <div class="feature-icon">
-
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M20 6 9 17l-5-5"/>
-                </svg>
-
-              </div>
-
-              <h3>
-                توجه به کیفیت
-              </h3>
-
-              <p>
-                آماده‌سازی مدل و چاپ با توجه به نتیجه نهایی انجام می‌شه.
-              </p>
-
-            </div>
-
-
-            <div class="feature">
-
-              <div class="feature-icon">
-
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="9"/>
-                  <path d="M12 7v5l3 2"/>
-                </svg>
-
-              </div>
-
-              <h3>
-                ساخت با حوصله
-              </h3>
-
-              <p>
-                هر محصول قبل از رسیدن به دستت بررسی و آماده می‌شه.
-              </p>
-
-            </div>
-
-          </div>
-
         </div>
+      </section>
 
-      </div>
-
-    </section>
-
-
-    <!-- =========================
+      <!-- =========================
          INSTAGRAM
     ========================== -->
 
-    <section class="instagram-section">
+      <section class="instagram-section">
+        <div class="container">
+          <div class="instagram-box">
+            <div class="instagram-content">
+              <div class="instagram-label">BUILDDIX ON INSTAGRAM</div>
 
-      <div class="container">
+              <h2>محصولات جدید رو از دست نده.</h2>
 
-        <div class="instagram-box">
-
-          <div class="instagram-content">
-
-            <div class="instagram-label">
-              BUILDDIX ON INSTAGRAM
+              <p>جدیدترین محصولات، پشت صحنه ساخت و سفارش‌های جدید رو در اینستاگرام Builddix ببین.</p>
             </div>
 
-            <h2>
-              محصولات جدید رو از دست نده.
-            </h2>
-
-            <p>
-              جدیدترین محصولات، پشت صحنه ساخت و سفارش‌های جدید
-              رو در اینستاگرام Builddix ببین.
-            </p>
-
+            <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="instagram-button">
+              دیدن صفحه Instagram
+              <span>←</span>
+            </a>
           </div>
-
-
-          <a
-            href="https://instagram.com/builddix"
-            target="_blank"
-            rel="noopener"
-            class="instagram-button"
-          >
-            دیدن صفحه Instagram
-            <span>←</span>
-          </a>
-
         </div>
+      </section>
+    </main>
 
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
+    <!-- =========================
        FOOTER
   ========================== -->
 
-  <footer>
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">build<span>dix</span></div>
 
-    <div class="container">
+          <div>© 2026 Builddix — محصولات چاپ سه‌بعدی</div>
 
-      <div class="footer-inner">
-
-        <div class="footer-logo">
-          build<span>dix</span>
+          <div>ساخته‌شده برای چیزهای خاص.</div>
         </div>
-
-        <div>
-          © 2026 Builddix — محصولات چاپ سه‌بعدی
-        </div>
-
-        <div>
-          ساخته‌شده برای چیزهای خاص.
-        </div>
-
       </div>
-
-    </div>
-
-  </footer>
-
-</body>
+    </footer>
+  </body>
+  <meta name="enamad" content="64833323" />
 </html>
