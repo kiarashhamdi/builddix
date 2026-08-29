@@ -1,38 +1,50 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
   <head>
-    <meta name="enamad" content="65402381" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Builddix | محصولات سه‌بعدی خاص</title>
 
-    <meta name="description" content="Builddix؛ فروش فیگور، اکسسوری و محصولات خاص چاپ سه‌بعدی." />
+    <title>Builddix | فروش محصولات چاپ سه‌بعدی خاص</title>
+
+    <meta
+      name="description"
+      content="Builddix؛ فروش فیگور سه‌بعدی، اکسسوری، محصولات دکوراتیو و محصولات سفارشی چاپ سه‌بعدی."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="enamad" content="65402381" />
+
+    <link rel="canonical" href="https://builddix.ir/" />
+
+    <meta property="og:title" content="Builddix | محصولات چاپ سه‌بعدی" />
+    <meta
+      property="og:description"
+      content="فیگور، اکسسوری و محصولات خاص چاپ سه‌بعدی."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://builddix.ir/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       :root {
-        --bg: #f8f8f6;
-        --surface: #ffffff;
-        --surface-soft: #f1f1ed;
-
-        --text: #111827;
-        --text-soft: #667085;
-
-        --border: #e7e7e2;
-
+        --bg: #f7f7f5;
+        --white: #fff;
         --navy: #101c35;
-        --navy-light: #1c2c4c;
-
+        --navy-2: #1b2b4a;
         --orange: #f97316;
         --orange-dark: #ea580c;
-
-        --radius-lg: 28px;
-        --radius-md: 18px;
-        --radius-sm: 12px;
-
+        --text: #151922;
+        --muted: #6b7280;
+        --border: #e5e5e0;
+        --soft: #eeeeea;
+        --radius: 22px;
         --container: 1180px;
       }
 
@@ -53,44 +65,34 @@
         line-height: 1.8;
       }
 
-      img {
-        display: block;
-        width: 100%;
-      }
-
       a {
         color: inherit;
         text-decoration: none;
       }
 
-      button {
-        font-family: inherit;
+      img {
+        display: block;
+        width: 100%;
       }
 
       .container {
         width: min(var(--container), calc(100% - 40px));
-        margin: 0 auto;
+        margin: auto;
       }
 
-      /* =========================
-       HEADER
-    ========================= */
+      /* HEADER */
 
       header {
         position: sticky;
         top: 0;
-        z-index: 100;
-
-        background: rgba(248, 248, 246, 0.88);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-
-        border-bottom: 1px solid rgba(231, 231, 226, 0.8);
+        z-index: 1000;
+        background: rgba(247, 247, 245, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--border);
       }
 
       .header-inner {
         height: 76px;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -98,507 +100,227 @@
       }
 
       .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        font-size: 24px;
+        font-size: 25px;
         font-weight: 800;
         letter-spacing: -1px;
-      }
-
-      .logo-mark {
-        width: 34px;
-        height: 34px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: var(--navy);
-        color: white;
-
-        border-radius: 10px;
-
-        font-size: 16px;
-        font-weight: 800;
       }
 
       .logo span {
         color: var(--orange);
       }
 
-      .nav {
+      nav {
         display: flex;
         align-items: center;
-        gap: 34px;
-
+        gap: 28px;
         font-size: 14px;
-        font-weight: 500;
-        color: #596273;
+        color: #5f6673;
       }
 
-      .nav a {
-        transition: color 0.2s ease;
-      }
-
-      .nav a:hover {
+      nav a:hover {
         color: var(--navy);
       }
 
-      .header-instagram {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
+      .instagram-btn {
         background: var(--navy);
         color: white;
-
         padding: 10px 16px;
         border-radius: 11px;
-
         font-size: 13px;
-        font-weight: 600;
-
-        transition: 0.2s ease;
+        font-weight: 700;
       }
 
-      .header-instagram:hover {
-        background: var(--navy-light);
-        transform: translateY(-1px);
-      }
-
-      /* =========================
-       HERO
-    ========================= */
+      /* HERO */
 
       .hero {
-        padding: 70px 0 80px;
+        padding: 75px 0 90px;
       }
 
       .hero-grid {
         display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
+        grid-template-columns: 1fr 1fr;
         gap: 65px;
-
         align-items: center;
       }
 
-      .hero-content {
-        max-width: 560px;
-      }
-
-      .hero-label {
+      .badge {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-
         padding: 7px 13px;
-
-        background: #fff;
+        background: white;
         border: 1px solid var(--border);
-
         border-radius: 999px;
-
-        color: #667085;
-
+        color: var(--muted);
         font-size: 12px;
         font-weight: 600;
-
-        margin-bottom: 22px;
+        margin-bottom: 20px;
       }
 
-      .hero-label-dot {
+      .badge-dot {
         width: 7px;
         height: 7px;
         background: var(--orange);
         border-radius: 50%;
       }
 
-      .hero h1 {
-        font-size: clamp(42px, 5.3vw, 68px);
-        line-height: 1.18;
-
-        letter-spacing: -2.8px;
-
-        font-weight: 800;
-
+      h1 {
+        font-size: clamp(42px, 5vw, 68px);
+        line-height: 1.2;
+        letter-spacing: -3px;
         margin-bottom: 22px;
       }
 
-      .hero h1 span {
+      h1 span {
         color: var(--orange);
       }
 
       .hero-description {
-        color: var(--text-soft);
+        max-width: 560px;
+        color: var(--muted);
         font-size: 17px;
-
-        max-width: 520px;
-
         margin-bottom: 30px;
       }
 
-      .hero-buttons {
+      .buttons {
         display: flex;
-        align-items: center;
         gap: 12px;
-
         flex-wrap: wrap;
       }
 
       .button {
         min-height: 48px;
-
         display: inline-flex;
         align-items: center;
         justify-content: center;
-
         padding: 0 22px;
-
         border-radius: 12px;
-
         font-size: 14px;
         font-weight: 700;
-
-        transition: all 0.2s ease;
       }
 
-      .button-primary {
+      .primary {
         background: var(--navy);
         color: white;
       }
 
-      .button-primary:hover {
-        background: var(--navy-light);
-        transform: translateY(-2px);
-      }
-
-      .button-secondary {
+      .secondary {
         background: white;
-        color: var(--text);
         border: 1px solid var(--border);
       }
 
-      .button-secondary:hover {
-        border-color: #cfcfc8;
-        transform: translateY(-2px);
-      }
-
-      .hero-note {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        margin-top: 20px;
-
-        color: #8a909c;
-        font-size: 12px;
-      }
-
-      .hero-note svg {
-        color: var(--orange);
-      }
-
-      /* Hero Product */
-
-      .hero-product {
-        position: relative;
-
-        min-height: 510px;
-
-        background: var(--surface-soft);
-
-        border-radius: var(--radius-lg);
-
-        overflow: hidden;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .hero-product::before {
-        content: "";
-
-        position: absolute;
-
-        width: 420px;
-        height: 420px;
-
-        background: #e5e5df;
-
-        border-radius: 50%;
-
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-      }
-
-      .hero-product-image {
-        position: relative;
-        z-index: 2;
-
-        width: 76%;
-        height: 430px;
-
+      .hero-image {
+        height: 510px;
         object-fit: cover;
-
-        border-radius: 22px;
-
-        box-shadow: 0 30px 70px rgba(16, 24, 40, 0.16);
+        border-radius: var(--radius);
+        background: var(--soft);
       }
 
-      .hero-badge {
-        position: absolute;
-
-        right: 24px;
-        bottom: 24px;
-
-        z-index: 5;
-
-        background: white;
-
-        padding: 13px 17px;
-
-        border-radius: 14px;
-
-        box-shadow: 0 10px 30px rgba(16, 24, 40, 0.1);
-
-        font-size: 12px;
-        font-weight: 700;
-      }
-
-      .hero-badge strong {
-        display: block;
-        color: var(--navy);
-        font-size: 14px;
-        margin-bottom: 2px;
-      }
-
-      .hero-badge span {
-        color: #8a909c;
-        font-weight: 500;
-      }
-
-      /* =========================
-       SECTION
-    ========================= */
+      /* SECTIONS */
 
       section {
-        padding: 90px 0;
+        padding: 85px 0;
       }
 
       .section-header {
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-
-        gap: 30px;
-
         margin-bottom: 35px;
       }
 
       .section-title {
         font-size: 32px;
-        line-height: 1.3;
-
-        letter-spacing: -1px;
-
         font-weight: 800;
+        letter-spacing: -1px;
       }
 
       .section-description {
-        color: var(--text-soft);
+        color: var(--muted);
         font-size: 14px;
-
-        margin-top: 7px;
+        margin-top: 6px;
       }
 
-      .section-link {
-        color: var(--orange);
-
-        font-size: 13px;
-        font-weight: 700;
-
-        white-space: nowrap;
-      }
-
-      /* =========================
-       PRODUCTS
-    ========================= */
+      /* PRODUCTS */
 
       .products-section {
         background: white;
-
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
       }
 
       .products {
         display: grid;
-
         grid-template-columns: repeat(4, 1fr);
-
         gap: 18px;
       }
 
       .product {
         background: white;
-
         border: 1px solid var(--border);
-
-        border-radius: var(--radius-md);
-
+        border-radius: 18px;
         overflow: hidden;
-
-        transition: all 0.25s ease;
+        transition: 0.25s ease;
       }
 
       .product:hover {
         transform: translateY(-5px);
-
         box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
-
-        border-color: #dcdcd6;
       }
 
       .product-image {
-        position: relative;
-
-        aspect-ratio: 1 / 1;
-
-        background: #f1f1ed;
-
+        aspect-ratio: 1;
+        background: var(--soft);
         overflow: hidden;
       }
 
       .product-image img {
-        width: 100%;
         height: 100%;
-
         object-fit: cover;
-
-        transition: transform 0.4s ease;
+        transition: 0.4s ease;
       }
 
-      .product:hover .product-image img {
+      .product:hover img {
         transform: scale(1.04);
-      }
-
-      .product-tag {
-        position: absolute;
-
-        top: 12px;
-        right: 12px;
-
-        background: white;
-
-        padding: 5px 9px;
-
-        border-radius: 8px;
-
-        font-size: 10px;
-        font-weight: 700;
-
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
       }
 
       .product-content {
         padding: 18px;
       }
 
-      .product-category {
+      .category-label {
         color: #9298a3;
-
         font-size: 11px;
-        font-weight: 500;
-
         margin-bottom: 5px;
       }
 
-      .product-name {
+      .product h3 {
         font-size: 16px;
+        margin-bottom: 14px;
+      }
+
+      .product-link {
+        display: inline-flex;
+        color: var(--orange);
+        font-size: 13px;
         font-weight: 700;
-
-        margin-bottom: 12px;
       }
 
-      .product-bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        gap: 10px;
-      }
-
-      .product-price {
-        color: var(--navy);
-
-        font-size: 14px;
-        font-weight: 800;
-      }
-
-      .product-price small {
-        color: #8a909c;
-
-        font-size: 10px;
-        font-weight: 500;
-      }
-
-      .product-button {
-        width: 36px;
-        height: 36px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 10px;
-
-        background: var(--navy);
-        color: white;
-
-        transition: 0.2s ease;
-      }
-
-      .product-button:hover {
-        background: var(--orange);
-      }
-
-      /* =========================
-       CATEGORIES
-    ========================= */
+      /* CATEGORIES */
 
       .categories {
         display: grid;
-
         grid-template-columns: repeat(3, 1fr);
-
         gap: 18px;
       }
 
       .category {
-        min-height: 190px;
-
-        position: relative;
-
+        min-height: 210px;
         padding: 30px;
-
-        border-radius: var(--radius-md);
-
-        overflow: hidden;
-
+        border-radius: var(--radius);
         background: var(--navy);
-
         color: white;
-
         display: flex;
         flex-direction: column;
         justify-content: end;
-
-        transition: transform 0.2s ease;
+        transition: 0.2s;
       }
 
       .category:hover {
@@ -606,32 +328,25 @@
       }
 
       .category:nth-child(2) {
-        background: #e9e9e4;
+        background: #e8e8e3;
         color: var(--navy);
       }
 
       .category:nth-child(3) {
-        background: #f3e8df;
+        background: #f3e5db;
         color: var(--navy);
       }
 
       .category-number {
-        position: absolute;
-
-        top: 22px;
-        left: 24px;
-
         font-size: 50px;
-        line-height: 1;
-
         opacity: 0.08;
-
+        margin-bottom: auto;
         font-weight: 800;
       }
 
       .category h3 {
-        font-size: 20px;
-        margin-bottom: 5px;
+        font-size: 21px;
+        margin-bottom: 4px;
       }
 
       .category p {
@@ -639,71 +354,44 @@
         opacity: 0.65;
       }
 
-      /* =========================
-       WHY BUILDDIX
-    ========================= */
+      /* ABOUT */
 
-      .why {
+      .about {
         display: grid;
-
-        grid-template-columns: 0.85fr 1.15fr;
-
+        grid-template-columns: 0.9fr 1.1fr;
         gap: 70px;
-
         align-items: center;
       }
 
-      .why-title {
+      .about h2 {
         font-size: 38px;
-
-        line-height: 1.3;
-
+        line-height: 1.35;
         letter-spacing: -1.5px;
-
         margin-bottom: 16px;
       }
 
-      .why-description {
-        color: var(--text-soft);
-
+      .about p {
+        color: var(--muted);
         font-size: 15px;
-
-        max-width: 450px;
       }
 
       .features {
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
-
-        gap: 12px;
+        gap: 14px;
       }
 
       .feature {
         background: white;
-
         border: 1px solid var(--border);
-
         border-radius: 16px;
-
         padding: 24px;
       }
 
       .feature-icon {
-        width: 42px;
-        height: 42px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: #fff3eb;
-
         color: var(--orange);
-
-        border-radius: 12px;
-
-        margin-bottom: 16px;
+        font-size: 24px;
+        margin-bottom: 12px;
       }
 
       .feature h3 {
@@ -712,124 +400,47 @@
       }
 
       .feature p {
-        color: var(--text-soft);
-
         font-size: 12px;
       }
 
-      /* =========================
-       INSTAGRAM CTA
-    ========================= */
+      /* CTA */
 
-      .instagram-section {
-        padding-top: 20px;
-        padding-bottom: 90px;
-      }
-
-      .instagram-box {
-        position: relative;
-
-        overflow: hidden;
-
+      .cta {
         background: var(--navy);
-
         color: white;
-
-        border-radius: var(--radius-lg);
-
-        padding: 55px 60px;
-
+        border-radius: var(--radius);
+        padding: 55px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        gap: 40px;
+        gap: 30px;
       }
 
-      .instagram-box::before {
-        content: "";
-
-        position: absolute;
-
-        width: 300px;
-        height: 300px;
-
-        border: 70px solid rgba(255, 255, 255, 0.025);
-
-        border-radius: 50%;
-
-        left: -80px;
-        top: -120px;
-      }
-
-      .instagram-content {
-        position: relative;
-        z-index: 2;
-      }
-
-      .instagram-label {
-        color: #9da8ba;
-
-        font-size: 12px;
-
-        margin-bottom: 8px;
-      }
-
-      .instagram-box h2 {
+      .cta h2 {
         font-size: 30px;
-
-        letter-spacing: -1px;
-
-        margin-bottom: 8px;
       }
 
-      .instagram-box p {
-        color: #aab3c1;
-
+      .cta p {
+        color: #aeb7c6;
         font-size: 13px;
       }
 
-      .instagram-button {
-        position: relative;
-        z-index: 2;
-
-        display: inline-flex;
-
-        align-items: center;
-        gap: 8px;
-
+      .cta a {
         background: white;
         color: var(--navy);
-
         padding: 13px 20px;
-
-        border-radius: 12px;
-
+        border-radius: 11px;
         font-size: 13px;
         font-weight: 700;
-
         white-space: nowrap;
-
-        transition: 0.2s ease;
       }
 
-      .instagram-button:hover {
-        background: #f5f5f5;
-
-        transform: translateY(-2px);
-      }
-
-      /* =========================
-       FOOTER
-    ========================= */
+      /* FOOTER */
 
       footer {
         border-top: 1px solid var(--border);
-
         padding: 28px 0;
-
         color: #8a909c;
-
         font-size: 11px;
       }
 
@@ -837,155 +448,67 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         gap: 20px;
       }
 
       .footer-logo {
-        color: var(--navy);
-
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 800;
+        color: var(--navy);
       }
 
       .footer-logo span {
         color: var(--orange);
       }
 
-      /* =========================
-       MOBILE
-    ========================= */
+      /* MOBILE */
 
       @media (max-width: 950px) {
-        .hero-grid {
+        .hero-grid,
+        .about {
           grid-template-columns: 1fr;
-
-          gap: 45px;
-        }
-
-        .hero-content {
-          max-width: 700px;
-        }
-
-        .hero-product {
-          min-height: 450px;
         }
 
         .products {
           grid-template-columns: repeat(2, 1fr);
         }
-
-        .why {
-          grid-template-columns: 1fr;
-
-          gap: 40px;
-        }
       }
 
       @media (max-width: 700px) {
         .container {
-          width: min(var(--container), calc(100% - 28px));
+          width: calc(100% - 28px);
         }
 
-        .header-inner {
-          height: 68px;
-        }
-
-        .nav {
+        nav {
           display: none;
         }
 
-        .header-instagram {
-          padding: 8px 12px;
-          font-size: 11px;
-        }
-
         .hero {
-          padding: 45px 0 55px;
+          padding: 50px 0 60px;
         }
 
-        .hero h1 {
+        h1 {
           font-size: 42px;
-          letter-spacing: -2px;
         }
 
-        .hero-description {
-          font-size: 15px;
-        }
-
-        .hero-product {
-          min-height: 350px;
-          border-radius: 22px;
-        }
-
-        .hero-product-image {
-          width: 82%;
-          height: 300px;
-        }
-
-        .hero-product::before {
-          width: 280px;
-          height: 280px;
+        .hero-image {
+          height: 350px;
         }
 
         section {
           padding: 65px 0;
         }
 
-        .section-header {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        .section-title {
-          font-size: 27px;
-        }
-
-        .products {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
-        }
-
-        .product-content {
-          padding: 13px;
-        }
-
-        .product-name {
-          font-size: 13px;
-        }
-
-        .product-price {
-          font-size: 12px;
-        }
-
-        .categories {
-          grid-template-columns: 1fr;
-        }
-
-        .category {
-          min-height: 160px;
-        }
-
+        .products,
+        .categories,
         .features {
           grid-template-columns: 1fr;
         }
 
-        .why-title {
-          font-size: 30px;
-        }
-
-        .instagram-box {
+        .cta {
           padding: 35px 25px;
-
           flex-direction: column;
           align-items: flex-start;
-
-          border-radius: 22px;
-        }
-
-        .instagram-box h2 {
-          font-size: 25px;
         }
 
         .footer-inner {
@@ -993,363 +516,252 @@
           align-items: flex-start;
         }
       }
-
-      @media (max-width: 420px) {
-        .products {
-          grid-template-columns: 1fr;
-        }
-
-        .product-image {
-          aspect-ratio: 1.15 / 1;
-        }
-
-        .hero h1 {
-          font-size: 37px;
-        }
-      }
     </style>
   </head>
 
   <body>
-    <!-- =========================
-       HEADER
-  ========================== -->
-
     <header>
       <div class="container">
         <div class="header-inner">
-          <a href="#" class="logo">
-            <div class="footer-logo" style="font-size: 28px">build<span>dix</span></div>
-          </a>
+          <a href="/" class="logo">build<span>dix</span></a>
 
-          <nav class="nav">
-            <a href="#products">محصولات</a>
-            <a href="#categories">دسته‌بندی‌ها</a>
-            <a href="#about">درباره Builddix</a>
+          <nav>
+            <a href="/products/">محصولات</a>
+            <a href="/figures/">فیگورها</a>
+            <a href="/accessories/">اکسسوری</a>
+            <a href="/custom/">سفارش سفارشی</a>
+            <a href="/about/">درباره ما</a>
           </nav>
 
-          <a class="header-instagram" href="https://instagram.com/builddix" target="_blank" rel="noopener"> Instagram </a>
+          <a
+            class="instagram-btn"
+            href="https://instagram.com/builddix"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- =========================
-         HERO
-    ========================== -->
-
       <section class="hero">
         <div class="container">
           <div class="hero-grid">
-            <div class="hero-content">
-              <div class="hero-label">
-                <span class="hero-label-dot"></span>
+            <div>
+              <div class="badge">
+                <span class="badge-dot"></span>
                 محصولات چاپ سه‌بعدی
               </div>
 
               <h1>
-                چیزهای خاص،<br />
+                محصولات خاص،<br />
                 <span>ساخته‌شده</span> برای تو.
               </h1>
 
               <p class="hero-description">
-                از فیگورهای خاص تا اکسسوری‌های متفاوت؛ محصولات Builddix با چاپ سه‌بعدی ساخته می‌شن تا چیزی متفاوت برای میز کار، اتاق یا هدیه داشته
-                باشی.
+                در Builddix مجموعه‌ای از فیگورها، اکسسوری‌ها و محصولات خاص
+                چاپ سه‌بعدی را پیدا می‌کنی. محصولاتی برای میز کار، اتاق،
+                کلکسیون و هدیه.
               </p>
 
-              <div class="hero-buttons">
-                <a href="#products" class="button button-primary"> دیدن محصولات </a>
+              <div class="buttons">
+                <a href="/products/" class="button primary">
+                  مشاهده محصولات
+                </a>
 
-                <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="button button-secondary"> صفحه اینستاگرام </a>
-              </div>
-
-              <div class="hero-note">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-
-                ساخته‌شده با دقت، از مدل تا محصول نهایی
+                <a href="/custom/" class="button secondary">
+                  سفارش محصول سفارشی
+                </a>
               </div>
             </div>
 
-            <div class="hero-product">
-              <!--
-              Replace this image with your best product photo.
-
-              Example:
-              images/hero.jpg
-            -->
-
-              <img class="hero-product-image" src="images/planter.jpeg" alt="محصول سه بعدی Builddix" />
-
-              <div class="hero-badge">
-                <strong>Builddix</strong>
-                <span>Made with 3D printing</span>
-              </div>
+            <div>
+              <img
+                class="hero-image"
+                src="/images/planter.jpeg"
+                alt="محصول چاپ سه بعدی Builddix"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-         PRODUCTS
-    ========================== -->
-
-      <section id="products" class="products-section">
+      <section class="products-section" id="products">
         <div class="container">
           <div class="section-header">
-            <div>
-              <h2 class="section-title">محصولات منتخب</h2>
-
-              <p class="section-description">چندتا از محصولاتی که می‌تونی از Builddix تهیه کنی.</p>
-            </div>
-
-            <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="section-link"> مشاهده همه ← </a>
+            <h2 class="section-title">محصولات منتخب</h2>
+            <p class="section-description">
+              تعدادی از محصولات چاپ سه‌بعدی Builddix
+            </p>
           </div>
 
           <div class="products">
-            <!-- PRODUCT 1 -->
-
             <article class="product">
-              <div class="product-image">
-                <img src="images/ghost.jpeg" alt="فیگور سه بعدی" loading="lazy" />
-
-                <span class="product-tag"> محبوب </span>
-              </div>
-
-              <div class="product-content">
-                <div class="product-category">فیگور</div>
-
-                <h3 class="product-name">فیگور شخصیت</h3>
-
-                <div class="product-bottom">
-                  <!-- <div class="product-price">
-                  ۱۲۰,۰۰۰
-                  <small>تومان</small>
-                </div> -->
-
-                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+              <a href="/figures/">
+                <div class="product-image">
+                  <img
+                    src="/images/ghost.jpeg"
+                    alt="فیگور سه بعدی Builddix"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
+
+                <div class="product-content">
+                  <div class="category-label">فیگور</div>
+                  <h3>فیگور سه‌بعدی</h3>
+                  <span class="product-link">مشاهده فیگورها ←</span>
+                </div>
+              </a>
             </article>
 
-            <!-- PRODUCT 2 -->
-
             <article class="product">
-              <div class="product-image">
-                <img src="images/harrypotter.jpeg" alt="فیگور سفارشی سه بعدی" loading="lazy" />
-
-                <span class="product-tag"> جدید </span>
-              </div>
-
-              <div class="product-content">
-                <div class="product-category">فیگور</div>
-
-                <h3 class="product-name">فیگور سفارشی</h3>
-
-                <div class="product-bottom">
-                  <!-- <div class="product-price">
-                  ۲۴۰,۰۰۰
-                  <small>تومان</small>
-                </div> -->
-
-                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+              <a href="/figures/">
+                <div class="product-image">
+                  <img
+                    src="/images/harrypotter.jpeg"
+                    alt="فیگور سفارشی سه بعدی"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
+
+                <div class="product-content">
+                  <div class="category-label">فیگور</div>
+                  <h3>فیگور شخصیت</h3>
+                  <span class="product-link">مشاهده فیگورها ←</span>
+                </div>
+              </a>
             </article>
 
-            <!-- PRODUCT 3 -->
-
             <article class="product">
-              <div class="product-image">
-                <img src="images/gang.jpeg" alt="بوکمارک سه بعدی" loading="lazy" />
-              </div>
-
-              <div class="product-content">
-                <div class="product-category">اکسسوری</div>
-
-                <h3 class="product-name">بوکمارک سه بعدی</h3>
-
-                <div class="product-bottom">
-                  <!-- <div class="product-price">
-                  ۸۰,۰۰۰
-                  <small>تومان</small>
-                </div> -->
-
-                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+              <a href="/accessories/">
+                <div class="product-image">
+                  <img
+                    src="/images/gang.jpeg"
+                    alt="اکسسوری چاپ سه بعدی"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
+
+                <div class="product-content">
+                  <div class="category-label">اکسسوری</div>
+                  <h3>اکسسوری سه‌بعدی</h3>
+                  <span class="product-link">مشاهده اکسسوری‌ها ←</span>
+                </div>
+              </a>
             </article>
 
-            <!-- PRODUCT 4 -->
-
             <article class="product">
-              <div class="product-image">
-                <img src="images/astronaut.jpeg" alt="اکسسوری میز کار سه بعدی" loading="lazy" />
-              </div>
-
-              <div class="product-content">
-                <div class="product-category">میز کار</div>
-
-                <h3 class="product-name">اکسسوری میز</h3>
-
-                <div class="product-bottom">
-                  <!-- <div class="product-price">
-                  ۹۵,۰۰۰
-                  <small>تومان</small>
-                </div> -->
-
-                  <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="product-button" aria-label="مشاهده محصول"> ← </a>
+              <a href="/accessories/">
+                <div class="product-image">
+                  <img
+                    src="/images/astronaut.jpeg"
+                    alt="اکسسوری میز کار چاپ سه بعدی"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
+
+                <div class="product-content">
+                  <div class="category-label">میز کار</div>
+                  <h3>محصولات میز کار</h3>
+                  <span class="product-link">مشاهده محصولات ←</span>
+                </div>
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-         CATEGORIES
-    ========================== -->
-
-      <section id="categories">
+      <section>
         <div class="container">
           <div class="section-header">
-            <div>
-              <h2 class="section-title">چی می‌تونی پیدا کنی؟</h2>
-
-              <p class="section-description">محصولات Builddix برای سلیقه‌های مختلف.</p>
-            </div>
+            <h2 class="section-title">دسته‌بندی محصولات</h2>
+            <p class="section-description">
+              چیزی که دنبالش هستی را سریع‌تر پیدا کن.
+            </p>
           </div>
 
           <div class="categories">
-            <a href="#products" class="category">
-              <span class="category-number"> 01 </span>
-
-              <h3>فیگورها</h3>
-
-              <p>شخصیت‌هایی که دوستشون داری، به شکل واقعی.</p>
+            <a href="/figures/" class="category">
+              <span class="category-number">01</span>
+              <h3>فیگورهای سه‌بعدی</h3>
+              <p>فیگور شخصیت‌ها و مدل‌های خاص برای کلکسیون.</p>
             </a>
 
-            <a href="#products" class="category">
-              <span class="category-number"> 02 </span>
-
-              <h3>اکسسوری</h3>
-
-              <p>چیزهای کوچک و خاص برای میز و اتاق.</p>
+            <a href="/accessories/" class="category">
+              <span class="category-number">02</span>
+              <h3>اکسسوری‌های سه‌بعدی</h3>
+              <p>محصولات کاربردی و دکوراتیو برای میز و اتاق.</p>
             </a>
 
-            <a href="#products" class="category">
-              <span class="category-number"> 03 </span>
-
-              <h3>سفارشی</h3>
-
-              <p>ایده خودت رو بده؛ ما تبدیلش می‌کنیم به یک محصول.</p>
+            <a href="/custom/" class="category">
+              <span class="category-number">03</span>
+              <h3>سفارش چاپ سه‌بعدی</h3>
+              <p>ایده یا مدل خودت را برای ساخت ارسال کن.</p>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-         ABOUT / WHY
-    ========================== -->
-
-      <section id="about">
+      <section>
         <div class="container">
-          <div class="why">
+          <div class="about">
             <div>
-              <h2 class="why-title">فقط یک پرینت سه‌بعدی نیست.</h2>
+              <h2>چرا Builddix؟</h2>
 
-              <p class="why-description">
-                هدف Builddix اینه که محصولات سه‌بعدی فقط «چیزی که با پرینتر ساخته شده» نباشن؛ بلکه محصولی باشن که دوست داشته باشی نگهش داری، روی میزت
-                بذاری یا به کسی هدیه بدی.
+              <p>
+                Builddix فقط یک پرینتر سه‌بعدی نیست. هدف ما ساخت محصولاتی است
+                که ظاهر خوب، جزئیات مناسب و ارزش واقعی برای استفاده یا هدیه
+                داشته باشند.
               </p>
             </div>
 
             <div class="features">
               <div class="feature">
-                <div class="feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 3v18" />
-                    <path d="M3 12h18" />
-                    <path d="m5 5 14 14" />
-                    <path d="m19 5-14 14" />
-                  </svg>
-                </div>
-
-                <h3>طراحی خاص</h3>
-
-                <p>تمرکز روی ظاهر و جزئیات، نه فقط چاپ کردن یک فایل.</p>
+                <div class="feature-icon">✦</div>
+                <h3>طراحی و انتخاب خاص</h3>
+                <p>تمرکز روی محصولاتی متفاوت از محصولات معمول بازار.</p>
               </div>
 
               <div class="feature">
-                <div class="feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 3v18" />
-                    <path d="M3 12h18" />
-                  </svg>
-                </div>
-
-                <h3>قابل سفارش</h3>
-
-                <p>اگر محصول خاصی می‌خوای، می‌تونی سفارشی درخواستش کنی.</p>
+                <div class="feature-icon">◇</div>
+                <h3>چاپ سه‌بعدی دقیق</h3>
+                <p>توجه به جزئیات مدل و کیفیت چاپ.</p>
               </div>
 
               <div class="feature">
-                <div class="feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20 6 9 17l-5-5" />
-                  </svg>
-                </div>
-
-                <h3>توجه به کیفیت</h3>
-
-                <p>آماده‌سازی مدل و چاپ با توجه به نتیجه نهایی انجام می‌شه.</p>
+                <div class="feature-icon">✓</div>
+                <h3>محصولات قابل سفارش</h3>
+                <p>امکان درخواست مدل‌ها و محصولات سفارشی.</p>
               </div>
 
               <div class="feature">
-                <div class="feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M12 7v5l3 2" />
-                  </svg>
-                </div>
-
-                <h3>ساخت با حوصله</h3>
-
-                <p>هر محصول قبل از رسیدن به دستت بررسی و آماده می‌شه.</p>
+                <div class="feature-icon">∞</div>
+                <h3>ایده‌های متنوع</h3>
+                <p>از فیگور و اکسسوری تا محصولات کاربردی.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-         INSTAGRAM
-    ========================== -->
-
-      <section class="instagram-section">
+      <section>
         <div class="container">
-          <div class="instagram-box">
-            <div class="instagram-content">
-              <div class="instagram-label">BUILDDIX ON INSTAGRAM</div>
-
-              <h2>محصولات جدید رو از دست نده.</h2>
-
-              <p>جدیدترین محصولات، پشت صحنه ساخت و سفارش‌های جدید رو در اینستاگرام Builddix ببین.</p>
+          <div class="cta">
+            <div>
+              <h2>دنبال یک محصول خاصی؟</h2>
+              <p>
+                اگر محصول موردنظرت را پیدا نکردی، درباره سفارش ساخت با ما
+                صحبت کن.
+              </p>
             </div>
 
-            <a href="https://instagram.com/builddix" target="_blank" rel="noopener" class="instagram-button">
-              دیدن صفحه Instagram
-              <span>←</span>
-            </a>
+            <a href="/custom/">سفارش سفارشی ←</a>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- =========================
-       FOOTER
-  ========================== -->
 
     <footer>
       <div class="container">
@@ -1358,9 +770,11 @@
 
           <div>© 2026 Builddix — محصولات چاپ سه‌بعدی</div>
 
-          <div>ساخته‌شده برای چیزهای خاص.</div>
-
-          <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7482055&Code=Aimj3SbShMV0ZoHFj7OjqW626DRnc6cK'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7482055&Code=Aimj3SbShMV0ZoHFj7OjqW626DRnc6cK' alt='' style='cursor:pointer' code='Aimj3SbShMV0ZoHFj7OjqW626DRnc6cK'></a>
+          <div>
+            <a href="/about/">درباره ما</a>
+            &nbsp; · &nbsp;
+            <a href="/contact/">تماس و سفارش</a>
+          </div>
         </div>
       </div>
     </footer>
